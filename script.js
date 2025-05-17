@@ -12,6 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const timelineBarContainer = document.getElementById('timeline-bar-container');
     const hittingDetailsDiv = document.getElementById('hitting-details');
     const evaluationDetailsDiv = document.getElementById('evaluation-details');
+    const loadingSpinner = document.getElementById('loading-spinner'); // Get spinner element
 
     const videoFilenameSpan = document.getElementById('video-filename');
     const videoResolutionSpan = document.getElementById('video-resolution');
@@ -183,10 +184,14 @@ document.addEventListener('DOMContentLoaded', () => {
         // Show loading state
         playPauseBtn.disabled = true;
         playPauseBtn.textContent = 'Loading...';
-        currentFrameImg.src = ""; // Clear previous image or use a loading GIF
-        currentFrameImg.alt = "Loading frames, please wait...";
-        currentFrameDisplaySpan.textContent = "Loading...";
-        currentTimeSpan.textContent = "...";
+        
+        if (loadingSpinner) loadingSpinner.style.display = 'block';
+        currentFrameImg.style.display = 'none'; // Hide the image element
+        currentFrameImg.src = ''; // Clear src to prevent broken icon attempts
+        currentFrameImg.alt = ''; // Clear alt
+
+        // currentFrameDisplaySpan.textContent = "Loading..."; // Keep these tied to actual frame display
+        // currentTimeSpan.textContent = "...";                 // Keep these tied to actual frame display
         if (hittingDetailsDiv) hittingDetailsDiv.innerHTML = '<p class="text-xl text-center py-8 text-gray-500">🚀 Loading round data and images...</p>';
         if (evaluationDetailsDiv) evaluationDetailsDiv.innerHTML = ''; // Clear evaluation details
         if (timelineBarContainer) timelineBarContainer.innerHTML = ''; // Clear timeline
@@ -235,6 +240,8 @@ document.addEventListener('DOMContentLoaded', () => {
         // Hide loading state / re-enable controls
         playPauseBtn.disabled = false;
         playPauseBtn.textContent = 'Play'; // Reset to 'Play' as video is stopped
+        if (loadingSpinner) loadingSpinner.style.display = 'none';
+        currentFrameImg.style.display = 'block'; // Show the image element again
 
         currentFrameIndex = targetFrameIndex >= 0 && targetFrameIndex < frames.length ? targetFrameIndex : 0;
         
@@ -261,6 +268,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function displayFrame(index) {
         if (index >= 0 && index < frames.length) {
+            if (loadingSpinner && loadingSpinner.style.display !== 'none') { // Ensure spinner is hidden if somehow still visible
+                loadingSpinner.style.display = 'none';
+            }
+            currentFrameImg.style.display = 'block'; // Ensure image is visible
             currentFrameImg.src = frames[index];
             currentFrameImg.alt = `Frame ${currentRoundData.start_frame + index}`;
             currentFrameDisplaySpan.textContent = `Frame: ${currentRoundData.start_frame + index}`;
@@ -330,6 +341,8 @@ document.addEventListener('DOMContentLoaded', () => {
         if (frames.length > 0) {
              displayFrame(0);
         } else {
+            if (loadingSpinner) loadingSpinner.style.display = 'none'; // Ensure spinner is hidden
+            currentFrameImg.style.display = 'block'; // Ensure image element is visible for alt text
             currentFrameImg.src = ""; // Clear image
             currentFrameImg.alt = "No video loaded";
             currentFrameDisplaySpan.textContent = "Frame: -";
@@ -553,10 +566,16 @@ document.addEventListener('DOMContentLoaded', () => {
         stopVideo();
         updateHittingInfo(null);
         updateEvaluationDetails();
-        timelineBarContainer.innerHTML = '';
+        if (timelineBarContainer) timelineBarContainer.innerHTML = '';
         if (roundSelectButtonsContainer) {
              roundSelectButtonsContainer.innerHTML = '<p class="text-gray-500 text-sm">No data</p>';
         }
+        
+        if (loadingSpinner) loadingSpinner.style.display = 'none';
+        currentFrameImg.style.display = 'block'; // Show image element for placeholder/alt text
+        currentFrameImg.src = ""; 
+        currentFrameImg.alt = "No video loaded";
+
         currentSelectedRoundIndex = -1;
         videoFilenameSpan.textContent = '-';
         videoResolutionSpan.textContent = '-';
@@ -565,6 +584,15 @@ document.addEventListener('DOMContentLoaded', () => {
         currentTimeSpan.textContent = '0.00s';
         totalDurationSpan.textContent = '0.00s';
         currentFrameDisplaySpan.textContent = 'Frame: 0';
+
+        if (videoContainer && !videoContainer.querySelector('video#benchmark-video')) {
+            videoContainer.innerHTML = ''; // Clear error message
+            videoContainer.appendChild(benchmarkVideo); // Re-add video element
+            // Ensure benchmark video container does not interfere with main player spinner
+            if (loadingSpinner && currentFrameImg.id !== 'benchmark-video') { // basic check it's not the benchmark image
+                 // This logic might be complex if benchmark also needs a spinner
+            }
+        }
     }
 
     function updateRoundButtonStyles(activeIndex) {
