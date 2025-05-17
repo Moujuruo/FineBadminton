@@ -64,6 +64,35 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
+    // New function for preloading frames
+    async function preloadFrames(frameUrls) {
+        console.log(`Preloading ${frameUrls.length} frames...`);
+        const imagePromises = frameUrls.map(src => {
+            return new Promise((resolve) => { // Resolve even on error for individual images
+                const img = new Image();
+                img.onload = () => resolve({ src, status: 'loaded' });
+                img.onerror = () => {
+                    console.warn(`Failed to preload image: ${src}`);
+                    resolve({ src, status: 'error' }); 
+                };
+                img.src = src;
+            });
+        });
+
+        try {
+            const results = await Promise.all(imagePromises); // Wait for all to attempt loading
+            const failedCount = results.filter(r => r.status === 'error').length;
+            if (failedCount > 0) {
+                console.warn(`${failedCount} out of ${frameUrls.length} frames failed to preload.`);
+            } else {
+                console.log("All frames preloaded successfully.");
+            }
+        } catch (error) {
+            // This catch is for Promise.all itself, unlikely with current setup unless an unhandled exception in new Promise callback
+            console.error("A critical error occurred during the preloading process:", error);
+        }
+    }
+
     function populateRoundSelect(data, retainSelection) {
         roundSelectButtonsContainer.innerHTML = '';
 
@@ -127,8 +156,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 button.classList.add('round-select-btn');
                 button.textContent = `${index + 1}`; // Changed from \`Round ${index + 1}\`
                 button.dataset.roundIndex = index;
-                button.addEventListener('click', () => {
-                    loadRoundData(index);
+                button.addEventListener('click', async () => { // Make event listener async
+                    await loadRoundData(index); // Await the async loadRoundData
                 });
                 roundSelectButtonsContainer.appendChild(button);
             } else { // Ellipsis
@@ -147,14 +176,36 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    function loadRoundData(roundIndex, targetFrameIndex = 0, targetSegmentIdentifier = null) {
-        stopVideo();
+    async function loadRoundData(roundIndex, targetFrameIndex = 0, targetSegmentIdentifier = null) {
+        stopVideo(); // Pauses video, sets isPlaying to false, resets currentFrameIndex
         currentSelectedRoundIndex = roundIndex;
+        
+        // Show loading state
+        playPauseBtn.disabled = true;
+        playPauseBtn.textContent = 'Loading...';
+        currentFrameImg.src = ""; // Clear previous image or use a loading GIF
+        currentFrameImg.alt = "Loading frames, please wait...";
+        currentFrameDisplaySpan.textContent = "Loading...";
+        currentTimeSpan.textContent = "...";
+        if (hittingDetailsDiv) hittingDetailsDiv.innerHTML = '<p class="text-xl text-center py-8 text-gray-500">🚀 Loading round data and images...</p>';
+        if (evaluationDetailsDiv) evaluationDetailsDiv.innerHTML = ''; // Clear evaluation details
+        if (timelineBarContainer) timelineBarContainer.innerHTML = ''; // Clear timeline
+        // Ensure the video info spans are also cleared or show loading
+        if(videoFilenameSpan) videoFilenameSpan.textContent = "Loading...";
+        if(videoResolutionSpan) videoResolutionSpan.textContent = "-";
+        if(videoFpsSpan) videoFpsSpan.textContent = "-";
+        if(videoDurationFramesSpan) videoDurationFramesSpan.textContent = "-";
+        if(totalDurationSpan) totalDurationSpan.textContent = "...";
+
+
         currentRoundData = datasets[currentLanguage][roundIndex];
 
         if (!currentRoundData) {
             console.error('No data for selected round index:', roundIndex);
-            clearAllUIData();
+            clearAllUIData(); // This also handles UI for no data
+            playPauseBtn.disabled = false; // Re-enable play button even if loading failed
+            playPauseBtn.textContent = 'Play';
+            if (hittingDetailsDiv) hittingDetailsDiv.innerHTML = '<p class="text-red-500">Error: Could not load round data.</p>';
             return;
         }
 
@@ -175,6 +226,15 @@ document.addEventListener('DOMContentLoaded', () => {
             const actualFrameNumber = currentRoundData.start_frame + i;
             frames.push(`${IMAGE_BASE_PATH}${videoPrefix}_${actualFrameNumber}.jpg`);
         }
+        
+        // Preload frames
+        if (frames.length > 0) {
+            await preloadFrames(frames);
+        }
+
+        // Hide loading state / re-enable controls
+        playPauseBtn.disabled = false;
+        playPauseBtn.textContent = 'Play'; // Reset to 'Play' as video is stopped
 
         currentFrameIndex = targetFrameIndex >= 0 && targetFrameIndex < frames.length ? targetFrameIndex : 0;
         
@@ -472,10 +532,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
             if (previousRoundIndex !== -1 && previousRoundIndex < data.length) {
                 // Load the same round, with the specific frame and segment identifier
-                loadRoundData(previousRoundIndex, previousFrameIndex, previousHittingSegmentId);
+                await loadRoundData(previousRoundIndex, previousFrameIndex, previousHittingSegmentId);
             } else if (data.length > 0) {
                 // Fallback: load the first round if previous was invalid
-                loadRoundData(0);
+                await loadRoundData(0);
             } else {
                 clearAllUIData(); // No rounds available for this language
             }
@@ -524,7 +584,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (data) {
             populateRoundSelect(data, false); // Initial population, don't try to retain selection
             if (data.length > 0) {
-                loadRoundData(0); // Load the first round on initial load
+                await loadRoundData(0); // Load the first round on initial load
             }
         } else {
             roundSelectButtonsContainer.innerHTML = '<p class="text-red-500">Failed to load data</p>';
