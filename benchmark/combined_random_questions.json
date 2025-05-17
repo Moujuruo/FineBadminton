@@ -1,0 +1,1783 @@
+[
+  {
+    "video_id": "0047.mp4",
+    "start_frame": 2517,
+    "end_frame": 2613,
+    "duration": "short",
+    "spatial": "action",
+    "temporal": "action classification",
+    "question": {
+      "question_zh": "哪一种击球类型最能描述位于画面上方的球员最后一次击球的情况？请从提供的四个选项中选择",
+      "question_en": "Which type of shot best describes the player's (at the top) last hit? Choose from the four options provided"
+    },
+    "options_en": [
+      "A. Clear: A clear is a shot hit deep into the opponent's backcourt with a high trajectory.",
+      "B. Net kill: A net kill is an aggressive shot hit downwards forcefully from close to the net when the shuttle is above net height.",
+      "C. Drop shot: A drop shot is typically hit from the midcourt or backcourt, aiming to land softly and close to the net in the opponent's forecourt.",
+      "D. Push shot: A push shot is played from the forecourt or midcourt, directing the shuttle with a pushing motion, often flat or slightly upwards."
+    ],
+    "answer": "D",
+    "options_zh": [
+      "A. 高远球: 高远球是一种以较高的弧线将来球击到对方场区底线附近的击球方式。",
+      "B. 扑球: 扑球是一种在对方发网前球或回击网前球时，迅速上步在网前举拍扑杀的击球方式。",
+      "C. 吊球: 吊球是一种在中后场通过拦截轻打让羽毛球快速下坠，将球送至对手前场的击球方式。",
+      "D. 推球: 推球是一种通过拍面与球形成一定角度、给球向前向上的力的击球方式。"
+    ],
+    "hitting_frames": [
+      2535,
+      2553,
+      2571,
+      2593
+    ],
+    "question_id": "ACTION CLASSIFICATION_0047.mp4_2517_2613_176"
+  },
+  {
+    "video_id": "0041.mp4",
+    "start_frame": 44918,
+    "end_frame": 45033,
+    "duration": "short",
+    "spatial": "action",
+    "temporal": "action classification",
+    "question": {
+      "question_zh": "哪一种击球类型最能描述位于画面上方的球员最后一次击球的情况？请从提供的四个选项中选择",
+      "question_en": "Which type of shot best describes the player's (at the top) last hit? Choose from the four options provided"
+    },
+    "options_en": [
+      "A. Drive: A drive is a fast, flat shot hit horizontally across the net, usually from the midcourt.",
+      "B. Push shot: A push shot is played from the forecourt or midcourt, directing the shuttle with a pushing motion, often flat or slightly upwards.",
+      "C. Clear: A clear is a shot hit deep into the opponent's backcourt with a high trajectory.",
+      "D. Drop shot: A drop shot is typically hit from the midcourt or backcourt, aiming to land softly and close to the net in the opponent's forecourt."
+    ],
+    "answer": "B",
+    "options_zh": [
+      "A. 抽球: 抽球是一种以平飞轨迹大力击球过网的击球方式。",
+      "B. 推球: 推球是一种通过拍面与球形成一定角度、给球向前向上的力的击球方式。",
+      "C. 高远球: 高远球是一种以较高的弧线将来球击到对方场区底线附近的击球方式。",
+      "D. 吊球: 吊球是一种在中后场通过拦截轻打让羽毛球快速下坠，将球送至对手前场的击球方式。"
+    ],
+    "hitting_frames": [
+      44936,
+      44959,
+      44986,
+      45013
+    ],
+    "question_id": "ACTION CLASSIFICATION_0041.mp4_44918_45033_141"
+  },
+  {
+    "video_id": "0006.mp4",
+    "start_frame": 29065,
+    "end_frame": 29191,
+    "duration": "short",
+    "spatial": "action",
+    "temporal": "action classification",
+    "question": {
+      "question_zh": "选出位于画面下方的球员最后一次击球最可能使用的击球类型。请依据提供的四个解释做出选择",
+      "question_en": "Select the type of shot that the player at the bottom most likely used for their last hit. Make your choice based on the four explanations provided"
+    },
+    "options_en": [
+      "A. Clear: A clear is a shot hit deep into the opponent's backcourt with a high trajectory.",
+      "B. Cross-court net shot: A cross-court net shot involves hitting the shuttle diagonally across the net from one side of the forecourt to the other, using wrist action.",
+      "C. Drop shot: A drop shot is typically hit from the midcourt or backcourt, aiming to land softly and close to the net in the opponent's forecourt.",
+      "D. Smash: A smash is a powerful overhead shot hit steeply downwards into the opponent's court."
+    ],
+    "answer": "A",
+    "options_zh": [
+      "A. 高远球: 高远球是一种以较高的弧线将来球击到对方场区底线附近的击球方式。",
+      "B. 勾球: 勾球是一种通过手腕快速弯曲击球、使球穿越至对方场地对侧网前的击球方式。",
+      "C. 吊球: 吊球是一种在中后场通过拦截轻打让羽毛球快速下坠，将球送至对手前场的击球方式。",
+      "D. 杀球: 杀球是一种将球在尽量高的击球点上大力斜压下去的击球方式。"
+    ],
+    "hitting_frames": [
+      29083,
+      29110,
+      29145,
+      29171
+    ],
+    "question_id": "ACTION CLASSIFICATION_0006.mp4_29065_29191_76"
+  },
+  {
+    "video_id": "0001.mp4",
+    "start_frame": 37311,
+    "end_frame": 37546,
+    "duration": "mid",
+    "spatial": "action",
+    "temporal": "action localization",
+    "question": {
+      "question_zh": "杀球是一种将球在尽量高的击球点上大力斜压下去的击球方式。视频片段中，杀球发生在第几次击球？",
+      "question_en": "In the video segment, which hit number corresponds to Smash: A smash is a powerful overhead shot hit steeply downwards into the opponent's court.?"
+    },
+    "options_en": [
+      "A. 4",
+      "B. 5",
+      "C. 6",
+      "D. 2"
+    ],
+    "answer": "C",
+    "options_zh": [
+      "A. 4",
+      "B. 5",
+      "C. 6",
+      "D. 2"
+    ],
+    "hitting_frames": [
+      37320,
+      37346,
+      37376,
+      37400,
+      37431,
+      37476,
+      37491,
+      37517
+    ],
+    "question_id": "ACTION LOCALIZATION_0001.mp4_37311_37546_8"
+  },
+  {
+    "video_id": "0006.mp4",
+    "start_frame": 94302,
+    "end_frame": 94469,
+    "duration": "mid",
+    "spatial": "action",
+    "temporal": "action localization",
+    "question": {
+      "question_zh": "推球是一种通过拍面与球形成一定角度、给球向前向上的力的击球方式。视频片段中，推球发生在第几次击球？",
+      "question_en": "In the video segment, which hit number corresponds to Push shot: A push shot is played from the forecourt or midcourt, directing the shuttle with a pushing motion, often flat or slightly upwards.?"
+    },
+    "options_en": [
+      "A. 2",
+      "B. 4",
+      "C. 3",
+      "D. 1"
+    ],
+    "answer": "B",
+    "options_zh": [
+      "A. 2",
+      "B. 4",
+      "C. 3",
+      "D. 1"
+    ],
+    "hitting_frames": [
+      94310,
+      94335,
+      94366,
+      94392,
+      94433,
+      94444
+    ],
+    "question_id": "ACTION LOCALIZATION_0006.mp4_94302_94469_81"
+  },
+  {
+    "video_id": "0008.mp4",
+    "start_frame": 78330,
+    "end_frame": 78483,
+    "duration": "mid",
+    "spatial": "action",
+    "temporal": "action localization",
+    "question": {
+      "question_zh": "杀球是一种将球在尽量高的击球点上大力斜压下去的击球方式。视频片段中，杀球发生在第几次击球？",
+      "question_en": "In the video segment, which hit number corresponds to Smash: A smash is a powerful overhead shot hit steeply downwards into the opponent's court.?"
+    },
+    "options_en": [
+      "A. 3",
+      "B. 5",
+      "C. 2",
+      "D. 1"
+    ],
+    "answer": "C",
+    "options_zh": [
+      "A. 3",
+      "B. 5",
+      "C. 2",
+      "D. 1"
+    ],
+    "hitting_frames": [
+      78333,
+      78366,
+      78381,
+      78407,
+      78433
+    ],
+    "question_id": "ACTION LOCALIZATION_0008.mp4_78330_78483_103"
+  },
+  {
+    "video_id": "0041.mp4",
+    "start_frame": 30560,
+    "end_frame": 30754,
+    "duration": "mid",
+    "spatial": "action",
+    "temporal": "action prediction",
+    "question": {
+      "question_zh": "预测该球员（位于画面上方）最后击球后，位于画面下方的对手最可能的回球方式。请根据四个解释选择答案",
+      "question_en": "After the player at the top makes their final hit, predict the most probable return from the opponent at the bottom. Choose from the four explanations"
+    },
+    "options_en": [
+      "A. Push shot: A push shot is played from the forecourt or midcourt, directing the shuttle with a pushing motion, often flat or slightly upwards.",
+      "B. Smash: A smash is a powerful overhead shot hit steeply downwards into the opponent's court.",
+      "C. Net kill: A net kill is an aggressive shot hit downwards forcefully from close to the net when the shuttle is above net height.",
+      "D. Drop shot: A drop shot is typically hit from the midcourt or backcourt, aiming to land softly and close to the net in the opponent's forecourt."
+    ],
+    "answer": "A",
+    "options_zh": [
+      "A. 推球: 推球是一种通过拍面与球形成一定角度、给球向前向上的力的击球方式。",
+      "B. 扑球: 扑球是一种在对方发网前球或回击网前球时，迅速上步在网前举拍扑杀的击球方式。",
+      "C. 吊球: 吊球是一种在中后场通过拦截轻打让羽毛球快速下坠，将球送至对手前场的击球方式。",
+      "D. 杀球: 杀球是一种将球在尽量高的击球点上大力斜压下去的击球方式。"
+    ],
+    "hitting_frames": [
+      30578,
+      30600,
+      30628,
+      30665,
+      30681,
+      30706,
+      30730
+    ],
+    "question_id": "ACTION PREDICTION_0041.mp4_30560_30754_171"
+  },
+  {
+    "video_id": "0051.mp4",
+    "start_frame": 52143,
+    "end_frame": 52317,
+    "duration": "mid",
+    "spatial": "action",
+    "temporal": "action prediction",
+    "question": {
+      "question_zh": "在该球员（位于画面上方）最后击球后，位于画面下方的对手最可能的回球结果是什么？请从四个选项中选择",
+      "question_en": "What is the most likely outcome of the return from the opponent at the top after the player at the bottom makes their final hit? Choose from the four options"
+    },
+    "options_en": [
+      "A. Net kill: A net kill is an aggressive shot hit downwards forcefully from close to the net when the shuttle is above net height.",
+      "B. Drop shot: A drop shot is typically hit from the midcourt or backcourt, aiming to land softly and close to the net in the opponent's forecourt.",
+      "C. Net lift: A net lift is an underhand shot played from the forecourt, lifting the shuttle high and deep into the opponent's backcourt, often used defensively.",
+      "D. Net shot: A net shot is played close to the net, usually dropping tightly over the net into the opponent's forecourt."
+    ],
+    "answer": "B",
+    "options_zh": [
+      "A. 扑球: 扑球是一种在对方发网前球或回击网前球时，迅速上步在网前举拍扑杀的击球方式。",
+      "B. 吊球: 吊球是一种在中后场通过拦截轻打让羽毛球快速下坠，将球送至对手前场的击球方式。",
+      "C. 挑球: 挑球是一种把球高高地送到对方后场高点、通常处于被动防守的击球方式。",
+      "D. 放网前球: 放网前球是一种在网前通过搓或拍面几乎水平的动作将球回送至对方网前的击球方式。"
+    ],
+    "hitting_frames": [
+      52164,
+      52176,
+      52203,
+      52221,
+      52232,
+      52252,
+      52275
+    ],
+    "question_id": "ACTION PREDICTION_0051.mp4_52143_52317_241"
+  },
+  {
+    "video_id": "0002.mp4",
+    "start_frame": 47052,
+    "end_frame": 47230,
+    "duration": "mid",
+    "spatial": "action",
+    "temporal": "action prediction",
+    "question": {
+      "question_zh": "视频片段中，位于画面下方的球员最后这次击球后，位于画面上方的对手最可能怎么回球？请根据以下四个解释选择最有可能的一项",
+      "question_en": "In the video clip, after the player at the bottom of the screen hits last, what is the most likely response from the opponent at the top? Choose the best option from the four explanations"
+    },
+    "options_en": [
+      "A. Drop shot: A drop shot is typically hit from the midcourt or backcourt, aiming to land softly and close to the net in the opponent's forecourt.",
+      "B. Net shot: A net shot is played close to the net, usually dropping tightly over the net into the opponent's forecourt.",
+      "C. Net lift: A net lift is an underhand shot played from the forecourt, lifting the shuttle high and deep into the opponent's backcourt, often used defensively.",
+      "D. Drive: A drive is a fast, flat shot hit horizontally across the net, usually from the midcourt."
+    ],
+    "answer": "B",
+    "options_zh": [
+      "A. 吊球: 吊球是一种在中后场通过拦截轻打让羽毛球快速下坠，将球送至对手前场的击球方式。",
+      "B. 放网前球: 放网前球是一种在网前通过搓或拍面几乎水平的动作将球回送至对方网前的击球方式。",
+      "C. 挑球: 挑球是一种把球高高地送到对方后场高点、通常处于被动防守的击球方式。",
+      "D. 抽球: 抽球是一种以平飞轨迹大力击球过网的击球方式。"
+    ],
+    "hitting_frames": [
+      47064,
+      47081,
+      47108,
+      47131,
+      47146,
+      47198,
+      47208
+    ],
+    "question_id": "ACTION PREDICTION_0002.mp4_47052_47230_35"
+  },
+  {
+    "video_id": "0001.mp4",
+    "duration": "short",
+    "start_frame": 14402,
+    "end_frame": 14478,
+    "spatial": "count",
+    "temporal": "hitting count",
+    "question": {
+      "question_zh": "计算这个回合中两名选手击球的总次数。",
+      "question_en": "Calculate the total number of strokes hit by the bottom player in this rally."
+    },
+    "options_zh": [
+      "A. 8",
+      "B. 2",
+      "C. 0",
+      "D. 4"
+    ],
+    "options_en": [
+      "A. 8",
+      "B. 2",
+      "C. 0",
+      "D. 4"
+    ],
+    "answer": "B",
+    "hitting_frames": [
+      14410,
+      14435,
+      14460,
+      14470
+    ],
+    "question_id": "HITTING COUNT_0001.mp4_14402_14478_1"
+  },
+  {
+    "video_id": "0003.mp4",
+    "duration": "mid",
+    "start_frame": 33440,
+    "end_frame": 33689,
+    "spatial": "count",
+    "temporal": "hitting count",
+    "question": {
+      "question_zh": "请确定该回合中双方选手击球的总次数。",
+      "question_en": "Determine the combined number of hits both players made in this badminton rally."
+    },
+    "options_zh": [
+      "A. 15",
+      "B. 9",
+      "C. 11",
+      "D. 3"
+    ],
+    "options_en": [
+      "A. 15",
+      "B. 9",
+      "C. 11",
+      "D. 3"
+    ],
+    "answer": "B",
+    "hitting_frames": [
+      33476,
+      33494,
+      33503,
+      33520,
+      33538,
+      33573,
+      33587,
+      33609,
+      33658
+    ],
+    "question_id": "HITTING COUNT_0003.mp4_33440_33689_38"
+  },
+  {
+    "video_id": "0049.mp4",
+    "duration": "long",
+    "start_frame": 17006,
+    "end_frame": 17314,
+    "spatial": "count",
+    "temporal": "hitting count",
+    "question": {
+      "question_zh": "这个羽毛球回合中top的击球次数是多少？",
+      "question_en": "What is the total number of strokes the top player hit in this badminton rally?"
+    },
+    "options_zh": [
+      "A. 9",
+      "B. 1",
+      "C. 3",
+      "D. 5"
+    ],
+    "options_en": [
+      "A. 9",
+      "B. 1",
+      "C. 3",
+      "D. 5"
+    ],
+    "answer": "D",
+    "hitting_frames": [
+      17014,
+      17076,
+      17098,
+      17128,
+      17158,
+      17176,
+      17207,
+      17244,
+      17272
+    ],
+    "question_id": "HITTING COUNT_0049.mp4_17006_17314_168"
+  },
+  {
+    "video_id": "0001.mp4",
+    "duration": 188,
+    "start_frame": 29140,
+    "end_frame": 29327,
+    "spatial": "cognition",
+    "temporal": "hitting comment",
+    "options_zh": [
+      "A. top从自己的右后场上网移动到左前场，反手将球挑向对手的中后场区域，试图通过挑高球拉开与对手的距离，为自己创造有利局面。",
+      "B. top为干扰对手位置判断，假装向左前场移动后突然急停转体，采用反手发小球至对方右前场后快速抢网，意图通过线路变化限制对手反攻路线。",
+      "C. top在接发球阶段突然降低球速，用反手分球至对手左场角落并伴随假动作欺骗对手重心，试图通过左右调动迫使对手回球出界",
+      "D. top在被动中快速退至右后场，使用正手击球过顶对手防守区域同时伴随手上停顿，意图通过假动作导致对手起跳失误从而实现得分。"
+    ],
+    "options_en": [
+      "A. Top moves from his right backcourt to the left frontcourt, using a backhand net lift to send the ball to the opponent's mid-backcourt area, attempting to create distance with a high clear and gain an advantageous position.",
+      "B. Top pretends to move toward the left frontcourt but suddenly stops and pivots, using a backhand net shot to the opponent's right frontcourt followed by a quick net rush, aiming to restrict the opponent's counterattack route with varied shot placement.",
+      "C. Top suddenly reduces the ball speed during the serve return, using a backhand cross-court shot to the opponent's left corner combined with a deceptive move to mislead the opponent's balance, attempting to force an out-of-bounds return by alternating sides.",
+      "D. Top quickly retreats to the right backcourt in a defensive stance, using a forehand shot to clear over the opponent's defensive zone with a deliberate hand pause, intending to deceive the opponent into a jumping error for a scoring opportunity."
+    ],
+    "answer": "A",
+    "question": {
+      "question_zh": "对于画面顶部球员的最后一击，以下哪一项最准确地描述了他的技术动作与意图？",
+      "question_en": "For the last shot of the player at the top of the screen, which of the following most accurately describes his technical action and intention?"
+    },
+    "hitting_frames": [
+      29145,
+      29175,
+      29199,
+      29232,
+      29292
+    ],
+    "question_id": "HITTING COMMENT_0001.mp4_29140_29327_4"
+  },
+  {
+    "video_id": "0007.mp4",
+    "duration": 131,
+    "start_frame": 13632,
+    "end_frame": 13762,
+    "spatial": "cognition",
+    "temporal": "hitting comment",
+    "options_zh": [
+      "A. top在左前场反手停顿推直线将球从自己的左前场推向对方的右后场，迫使对手判断失误，成功得分。",
+      "B. top在网前假动作后反手分球到对方左后场，但对手及时移动到位将球救回导致top的球出界，最终失分。",
+      "C. top在球场中央做出反手推直线的假动作后突然变向挑后场对角线，但对手预判准确并快速抢网将球扑杀得分。",
+      "D. top在右中场用反手过顶扣杀试图压制对手，但球的弧度过高未能过网导致下网，因此失分。"
+    ],
+    "options_en": [
+      "A. Top used a backhand stop push shot from the left frontcourt to send the ball straight from their left frontcourt to the opponent's right backcourt, forcing a misjudgment and successfully scoring.",
+      "B. Top used a deceptive backhand cross-court shot to the opponent's left backcourt after a fake at the net, but the opponent moved in time to retrieve the ball, causing Top's shot to go out of bounds and resulting in a lost point.",
+      "C. Top faked a backhand straight push shot at the center of the court before suddenly changing direction with a diagonal net lift to the backcourt, but the opponent anticipated correctly and quickly rushed the net for a net kill to score.",
+      "D. Top attempted to pressure the opponent with a backhand overhead kill from the right midcourt, but the ball's trajectory was too high and failed to clear the net, leading to a lost point."
+    ],
+    "answer": "A",
+    "question": {
+      "question_zh": "对于位于画面顶部的球员的最后一次击球，哪一个评价最为恰当？",
+      "question_en": "Which of the following evaluations is most appropriate for the last shot made by the player at the top of the screen?"
+    },
+    "hitting_frames": [
+      13635,
+      13650,
+      13682,
+      13709,
+      13750
+    ],
+    "question_id": "HITTING COMMENT_0007.mp4_13632_13762_106"
+  },
+  {
+    "video_id": "0002.mp4",
+    "duration": 122,
+    "start_frame": 90810,
+    "end_frame": 90931,
+    "spatial": "cognition",
+    "temporal": "hitting comment",
+    "options_zh": [
+      "A. bottom从左中场快速上网正手扑对角直线球至对手右侧底线，尽管动作隐蔽但因落点过深直接出界",
+      "B. bottom从自己的右前场反手抢网抽直线球到对手的左中场，意图给对手施压，但效果一般。",
+      "C. bottom被迫在中场用反手进行过顶高远球分球到右侧边线附近，虽暂时缓解压力但被对手直接拦截得分。",
+      "D. bottom在右后场正手跳起扣杀斜线球至对手底线区域，虽然展现了强力进攻意图却因下网导致失分。"
+    ],
+    "options_en": [
+      "A. The bottom player quickly rushed the net from the left midcourt with a forehand net kill, sending a diagonal straight shot to the opponent's right baseline. Despite the deceptive motion, the shot landed too deep and went out directly.",
+      "B. The bottom player rushed the net with a backhand drive from their right forecourt, sending a straight shot to the opponent's left midcourt, intending to pressure the opponent but with mediocre effect.",
+      "C. The bottom player was forced to play a backhand overhead clear from the midcourt, splitting the shot near the right sideline. Although this temporarily relieved pressure, the opponent directly intercepted it to score.",
+      "D. The bottom player performed a forehand jump kill from the right rear court, aiming a cross-court shot to the opponent's baseline area. Despite showing strong offensive intent, the shot went into the net, resulting in a lost point."
+    ],
+    "answer": "B",
+    "question": {
+      "question_zh": "对于片段中位于画面底部的球员最后一次击球，以下哪项评价最符合其实际表现？",
+      "question_en": "For the last shot by the player at the bottom of the screen in the clip, which of the following evaluations best matches their actual performance?"
+    },
+    "hitting_frames": [
+      90813,
+      90867,
+      90880,
+      90908,
+      90924
+    ],
+    "question_id": "HITTING COMMENT_0002.mp4_90810_90931_39"
+  },
+  {
+    "video_id": "0049.mp4",
+    "start_frame": 25906,
+    "end_frame": 26100,
+    "duration": "mid",
+    "spatial": "position",
+    "temporal": "hitting localization",
+    "question": {
+      "question_zh": "从四个选项中选择最接近：位于画面下方的球员最后一次击球时，在自己场地的哪个区域完成击球？（以击球者自身朝向为前方）",
+      "question_en": "Choose the closest option: Which area of their court (facing direction as front) did the player at the bottom hit from during their last hit?"
+    },
+    "options_en": [
+      "A. right front court",
+      "B. right back court",
+      "C. left front court",
+      "D. left back court"
+    ],
+    "answer": "A",
+    "options_zh": [
+      "A. 右前场",
+      "B. 右后场",
+      "C. 左前场",
+      "D. 左后场"
+    ],
+    "hitting_frames": [
+      25925,
+      25952,
+      26010,
+      26042,
+      26077,
+      26100
+    ],
+    "question_id": "HITTING LOCALIZATION_0049.mp4_25906_26100_180"
+  },
+  {
+    "video_id": "0005.mp4",
+    "start_frame": 61483,
+    "end_frame": 61660,
+    "duration": "mid",
+    "spatial": "position",
+    "temporal": "hitting localization",
+    "question": {
+      "question_zh": "该球员（位于画面上方）最后一次击球时，其在自己场地的哪个区域执行了击球动作？（以击球者自身朝向为前方）请选择最接近的答案",
+      "question_en": "Which area of their own court (with their facing direction as front) did the player at the top execute their last hit from? Please select the closest answer"
+    },
+    "options_en": [
+      "A. right front court",
+      "B. left front court",
+      "C. right back court",
+      "D. left back court"
+    ],
+    "answer": "D",
+    "options_zh": [
+      "A. 右前场",
+      "B. 左前场",
+      "C. 右后场",
+      "D. 左后场"
+    ],
+    "hitting_frames": [
+      61501,
+      61527,
+      61563,
+      61602,
+      61636,
+      61660
+    ],
+    "question_id": "HITTING LOCALIZATION_0005.mp4_61483_61660_61"
+  },
+  {
+    "video_id": "0001.mp4",
+    "start_frame": 86427,
+    "end_frame": 86571,
+    "duration": "short",
+    "spatial": "position",
+    "temporal": "hitting localization",
+    "question": {
+      "question_zh": "位于画面下方的球员最后一次击球时，其在自己场地的哪个区域完成击球？（以击球者自身朝向为前方）请选择最接近的选项",
+      "question_en": "Infer the area of their court (with their facing direction as front) where the player at the bottom hit from during their last hit. Choose the closest option from the four provided"
+    },
+    "options_en": [
+      "A. mid front court",
+      "B. left back court",
+      "C. mid back court",
+      "D. right back court"
+    ],
+    "answer": "A",
+    "options_zh": [
+      "A. 中前场",
+      "B. 左后场",
+      "C. 中后场",
+      "D. 右后场"
+    ],
+    "hitting_frames": [
+      86449,
+      86474,
+      86513,
+      86541,
+      86571
+    ],
+    "question_id": "HITTING LOCALIZATION_0001.mp4_86427_86571_11"
+  },
+  {
+    "video_id": "0003.mp4",
+    "start_frame": 32470,
+    "end_frame": 32542,
+    "duration": "short",
+    "spatial": "position",
+    "temporal": "hitting prediction",
+    "question": {
+      "question_zh": "从四个选项中选择：位于画面下方的球员最后一次击球后，球最可能落在对方场地的哪个区域（以对手的朝向为前方）？",
+      "question_en": "Choose from four options: After the player (at the bottom) hits last, which area on the opponent's court (with the opponent's facing direction as front) will the ball land most likely"
+    },
+    "options_en": [
+      "A. mid back court",
+      "B. mid front court",
+      "C. right back court",
+      "D. left back court"
+    ],
+    "answer": "B",
+    "options_zh": [
+      "A. 中后场",
+      "B. 中前场",
+      "C. 右后场",
+      "D. 左后场"
+    ],
+    "hitting_frames": [
+      32483,
+      32495,
+      32524
+    ],
+    "question_id": "HITTING PREDICTION_0003.mp4_32470_32542_33"
+  },
+  {
+    "video_id": "0010.mp4",
+    "start_frame": 1240,
+    "end_frame": 1274,
+    "duration": "short",
+    "spatial": "position",
+    "temporal": "hitting prediction",
+    "question": {
+      "question_zh": "分析该球员（位于画面上方）最后一次击球后，球最可能落在对方场地的哪个区域（以对手的朝向为前方）？请从四个选项中选择",
+      "question_en": "Analyze where the ball will most likely land on the opponent's court (with the opponent's facing direction as front) after the player (at the top) hits last. Choose from the options"
+    },
+    "options_en": [
+      "A. mid back court",
+      "B. mid front court",
+      "C. right back court",
+      "D. left back court"
+    ],
+    "answer": "B",
+    "options_zh": [
+      "A. 中后场",
+      "B. 中前场",
+      "C. 右后场",
+      "D. 左后场"
+    ],
+    "hitting_frames": [
+      1264
+    ],
+    "question_id": "HITTING PREDICTION_0010.mp4_1240_1274_111"
+  },
+  {
+    "video_id": "0006.mp4",
+    "start_frame": 86263,
+    "end_frame": 86360,
+    "duration": "short",
+    "spatial": "position",
+    "temporal": "hitting prediction",
+    "question": {
+      "question_zh": "该球员（位于画面下方）最后一次击球后，球最可能落在对方场地的哪个区域？（以对手的朝向为前方）请选择答案",
+      "question_en": "What area on the opponent's court (with the opponent's facing direction as front) is the ball most likely to land in after the player (at the bottom) hits last? Select the answer"
+    },
+    "options_en": [
+      "A. left front court",
+      "B. right front court",
+      "C. right back court",
+      "D. left back court"
+    ],
+    "answer": "D",
+    "options_zh": [
+      "A. 左前场",
+      "B. 右前场",
+      "C. 右后场",
+      "D. 左后场"
+    ],
+    "hitting_frames": [
+      86277,
+      86309,
+      86337
+    ],
+    "question_id": "HITTING PREDICTION_0006.mp4_86263_86360_67"
+  },
+  {
+    "video_id": "0050.mp4",
+    "duration": "mid",
+    "start_frame": 85547,
+    "end_frame": 85754,
+    "spatial": "position",
+    "temporal": "moving recognition",
+    "question": {
+      "question_zh": "该球员（位于画面上方）击球时，相对于自己面朝方向的移动轨迹变化是哪一个选项？",
+      "question_en": "What option describes the movement direction of the player (at the top) relative to their facing direction during the hit?"
+    },
+    "options_zh": [
+      "A. 右前场->右后场->右前场->右中场",
+      "B. 右中场->左后场->左中场->右后场",
+      "C. 中后场->左前场->右中场->右前场",
+      "D. 右后场->左后场->中前场->中前场"
+    ],
+    "options_en": [
+      "A. right front court->right back court->right front court->right mid court",
+      "B. right back court->left back court->mid front court->mid front court",
+      "C. mid back court->left front court->right mid court->right front court",
+      "D. right mid court->left back court->left mid court->right back court"
+    ],
+    "answer": "C",
+    "hitting_frames": [
+      85574,
+      85591,
+      85620,
+      85648,
+      85679,
+      85705,
+      85729
+    ],
+    "question_id": "MOVING RECOGNITION_0050.mp4_85547_85754_184"
+  },
+  {
+    "video_id": "0041.mp4",
+    "duration": "mid",
+    "spatial": "position",
+    "start_frame": 33515,
+    "end_frame": 33770,
+    "temporal": "moving recognition",
+    "question": {
+      "question_zh": "相对于自己的面朝方向，位于画面下方的球员击球时的移动变化对应哪个选项？",
+      "question_en": "Which option corresponds to the player's (at the bottom) movement relative to their facing direction during the hit?"
+    },
+    "options_zh": [
+      "A. 右前场->左前场->右中场->中前场->右中场",
+      "B. 左前场->左前场->左后场->左前场->中前场",
+      "C. 中后场->右后场->左前场->右后场->左前场",
+      "D. 左中场->右后场->中前场->左前场->左后场"
+    ],
+    "options_en": [
+      "A. right front court->left front court->right mid court->mid front court->right mid court",
+      "B. left front court->left front court->left back court->left front court->mid front court",
+      "C. mid back court->right back court->left front court->right back court->left front court",
+      "D. left mid court->right back court->mid front court->left front court->left back court"
+    ],
+    "answer": "B",
+    "hitting_frames": [
+      33530,
+      33557,
+      33582,
+      33612,
+      33651,
+      33670,
+      33691,
+      33716,
+      33742
+    ],
+    "question_id": "MOVING RECOGNITION_0041.mp4_33515_33770_131"
+  },
+  {
+    "video_id": "0006.mp4",
+    "duration": "mid",
+    "spatial": "position",
+    "start_frame": 93869,
+    "end_frame": 94099,
+    "temporal": "moving recognition",
+    "question": {
+      "question_zh": "这是一个羽毛球赛事视频片段。哪一个选项更符合位于画面下方的球员相对于他面朝方向的击球移动变化？",
+      "question_en": "In this badminton clip, which option best matches the movement direction of the player (at the bottom) relative to their facing direction?"
+    },
+    "options_zh": [
+      "A. 右前场->左前场->左中场->左前场",
+      "B. 右后场->中后场->中前场->中场",
+      "C. 中后场->右前场->中前场->左中场",
+      "D. 中前场->右前场->右中场->左前场"
+    ],
+    "options_en": [
+      "A. right front court->left front court->left mid court->left front court",
+      "B. right back court->mid back court->mid front court->mid court",
+      "C. mid back court->right front court->mid front court->left mid court",
+      "D. mid front court->right front court->right mid court->left front court"
+    ],
+    "answer": "D",
+    "hitting_frames": [
+      93875,
+      93914,
+      93943,
+      93973,
+      94009,
+      94048,
+      94078
+    ],
+    "question_id": "MOVING RECOGNITION_0006.mp4_93869_94099_78"
+  },
+  {
+    "video_id": "0004.mp4",
+    "duration": "short",
+    "start_frame": 34682,
+    "end_frame": 34824,
+    "spatial": "cognition",
+    "temporal": "pointer recognition",
+    "options_zh": [
+      "A. bottom防守时强行过顶造成线路选择失误，未能限制对方抢网节奏，关键球被连续压制导致自身站位混乱失去反击机会",
+      "B. bottom在反手位处理过早暴露意图，导致回球出界并错过衔接上网机会，关键球中未能抢网压制对手主动权被完全掌控。",
+      "C. bottom移动反应迟缓使假动作被直接识破，分球不到位迫使top陷入被动防守，关键球过渡选择失误暴露防守空档被直接攻击。",
+      "D. bottom发球质量不足且反手推挑线路选择保守，未能有效破坏top进攻节奏，关键球处理偏高导致被反击时机把握不当。"
+    ],
+    "options_en": [
+      "A. Bottom's forced overhead shot during defense led to route selection errors, failing to limit the opponent's net interception rhythm. In key shots, they were continuously pressured, causing positional confusion and losing counterattack opportunities.",
+      "B. Bottom exposed their intention too early when handling the backhand position, resulting in the shot going out of bounds and missing the opportunity to follow up at the net. In key shots, they failed to intercept at the net to suppress the opponent's initiative, allowing complete control.",
+      "C. Bottom's slow movement reaction made the deceptive action directly recognizable. The placement of shots was inaccurate, forcing top into passive defense. The transition choice in key shots was flawed, exposing defensive gaps that were directly attacked.",
+      "D. The quality of bottom's serve was insufficient, and the backhand push/net lift route selection was conservative, failing to effectively disrupt top's offensive rhythm. The key shot was handled too high, leading to improper timing for counterattacks."
+    ],
+    "answer": "D",
+    "question": {
+      "question_zh": "请分析本回合失利的主要原因？",
+      "question_en": "Please analyze the main reasons for losing this round?"
+    },
+    "hitting_frames": [
+      34689,
+      34711,
+      34735,
+      34775
+    ],
+    "question_id": "POINTER RECOGNITION_0004.mp4_34682_34824_157"
+  },
+  {
+    "video_id": "0003.mp4",
+    "duration": "short",
+    "start_frame": 46181,
+    "end_frame": 46319,
+    "spatial": "cognition",
+    "temporal": "pointer recognition",
+    "options_zh": [
+      "A. bottom发球质量偏低给了对手可乘之机，且在被动情况下反手抽球失误导致直接丢分。",
+      "B. 由于对手在反手位使用假动作欺骗了bottom的判断，使其预判错误随后的过渡球处理不当，最终因回球下网而失分。",
+      "C. 对手通过高质量的过顶杀球和分球迫使bottom连续后退，而bottom上网移动迟缓且试图扑杀时出现击球点过早导致出界，最终丢分。",
+      "D. bottom在抢网阶段与对手发生短暂对抗，但对手连续压迫使其陷入被动，最终bottom在被动情况下尝试挑后场球力量不足直接出界导致失分。"
+    ],
+    "options_en": [
+      "A. The low-quality serve by bottom gave the opponent an opportunity, and the backhand drive error in a passive situation directly resulted in losing the point.",
+      "B. Due to the opponent's deceptive move at the backhand side, bottom misjudged the shot and mishandled the subsequent transitional shot, eventually losing the point as the shuttle failed to clear the net.",
+      "C. The opponent forced bottom to retreat continuously with high-quality overhead smashes and cross-court shots, while bottom's slow movement to the net and early hitting point during the attempted net kill caused the shuttle to go out, ultimately losing the point.",
+      "D. Bottom engaged in a brief net duel with the opponent during the net rush, but the opponent's continuous pressure forced bottom into a passive position, and the attempted rear-court lift with insufficient power went out directly, resulting in losing the point."
+    ],
+    "answer": "A",
+    "question": {
+      "question_zh": "请分析该回合导致失分的主要原因？",
+      "question_en": "Please analyze the main reason for losing the point in this rally?"
+    },
+    "hitting_frames": [
+      46219,
+      46235,
+      46246
+    ],
+    "question_id": "POINTER RECOGNITION_0003.mp4_46181_46319_118"
+  },
+  {
+    "video_id": "0002.mp4",
+    "duration": "mid",
+    "start_frame": 32189,
+    "end_frame": 32459,
+    "spatial": "cognition",
+    "temporal": "pointer recognition",
+    "options_zh": [
+      "A. 双方在中后场形成多拍相持后，bottom通过连续平抽球压迫，迫使top在反手位被动状态下无法完成有效防守，最终BOTTOM正手抽对角得分",
+      "B. bottom通过精准的网前操控和变线，将top压制在被动中。最终top在击球10反手扑斜线时因触网失误，bottom抓住机会得分",
+      "C. top在防守过程中连续两次使用过顶高远球，导致bottom回动失位，最终top通过精准的反手直线杀球直接得分",
+      "D. 当top处于网前主导位置时，bottom冒险尝试反手劈杀对角，造成击球力量过大出现出界失误，top抓住机会得分"
+    ],
+    "options_en": [
+      "A. While top dominated the net position, bottom risked a backhand cross-court slice smash, resulting in excessive power and an out-of-bounds error. Top capitalized on this opportunity to score.",
+      "B. Through precise net control and shot variation, bottom pressured top into a passive position. Ultimately, top made a net touch error while attempting a backhand diagonal net kill on the 10th shot, allowing bottom to seize the opportunity and score.",
+      "C. During the defensive phase, top consecutively used two overhead clears, causing bottom to lose positioning during recovery. Finally, top scored directly with a precise backhand straight smash.",
+      "D. After a prolonged rally in the mid-to-rear court, bottom applied continuous drive pressure, forcing top into a passive backhand position where effective defense was impossible. Ultimately, bottom scored with a forehand diagonal drive."
+    ],
+    "answer": "B",
+    "question": {
+      "question_zh": "请分析本回合中得分的具体原因",
+      "question_en": "Please analyze the specific reason for scoring in this round."
+    },
+    "hitting_frames": [
+      32191,
+      32214,
+      32239,
+      32263,
+      32318,
+      32336,
+      32360,
+      32387,
+      32411,
+      32427
+    ],
+    "question_id": "POINTER RECOGNITION_0002.mp4_32189_32459_61"
+  },
+  {
+    "video_id": "0007.mp4",
+    "duration": "long",
+    "start_frame": 35202,
+    "end_frame": 38922,
+    "spatial": "count",
+    "temporal": "round count",
+    "answer": "C",
+    "start_score": "6:14",
+    "end_score": "8:15",
+    "hitting_frames": [
+      55117,
+      55139,
+      55175,
+      55194,
+      55217,
+      55239,
+      55466,
+      55477,
+      55611,
+      55635,
+      55665,
+      55701,
+      55721,
+      55747,
+      55760,
+      55805,
+      55839,
+      55854,
+      55877,
+      55909,
+      55941,
+      55970,
+      55999,
+      56026,
+      56088,
+      56113,
+      56130,
+      56158,
+      56188,
+      56242,
+      56257,
+      56562,
+      57119,
+      57367,
+      57388,
+      57424,
+      57440,
+      57463,
+      57495,
+      57515,
+      57542,
+      57566,
+      57614,
+      57630,
+      57661,
+      57683,
+      57711,
+      57765,
+      57792,
+      57825,
+      57842,
+      57847,
+      57875,
+      57911,
+      57947,
+      57975,
+      58011,
+      58031,
+      58364,
+      58397,
+      58963,
+      58985,
+      59017,
+      59040,
+      59067,
+      59111,
+      59150,
+      59166,
+      59182,
+      59203,
+      59237,
+      59273,
+      59298,
+      59329,
+      59359,
+      59388,
+      59417,
+      59432,
+      59460,
+      59488,
+      59514,
+      59556,
+      59594,
+      59843,
+      59908,
+      60223,
+      60250,
+      60279,
+      60304,
+      60350,
+      60619,
+      60696,
+      60910,
+      61319,
+      61340,
+      61366,
+      61405,
+      61423,
+      61450,
+      61469,
+      61491,
+      61518,
+      61869,
+      62168,
+      62190,
+      62225,
+      62255,
+      62271,
+      62295,
+      62325,
+      62362,
+      62389,
+      62429,
+      62464,
+      62478,
+      62504,
+      62530,
+      62557,
+      62588,
+      62613,
+      62626,
+      62855,
+      62903,
+      63569,
+      63592,
+      63614,
+      63642,
+      63661,
+      63853,
+      63935,
+      64150,
+      64172,
+      64196,
+      64220,
+      64273,
+      64293,
+      64588,
+      64743,
+      65557,
+      65578,
+      65592,
+      65602,
+      66009,
+      66055,
+      66070,
+      66094,
+      66123,
+      66165,
+      66202,
+      66217,
+      66248,
+      66283,
+      66314,
+      66341,
+      66390,
+      66407,
+      66439,
+      66485,
+      66507,
+      66805,
+      66868,
+      67249,
+      67273,
+      67299,
+      67346,
+      67372,
+      67396,
+      67410,
+      67433,
+      67698,
+      67717,
+      67905,
+      68375,
+      68394,
+      68415,
+      68450,
+      68471,
+      68483,
+      68521,
+      68546,
+      68573,
+      68597,
+      68924,
+      68974,
+      69025,
+      69135,
+      70473,
+      70495,
+      70506,
+      70518,
+      70531,
+      70583,
+      71071,
+      71091,
+      71121,
+      71945,
+      71967,
+      72011,
+      72045,
+      72062,
+      72091,
+      72115,
+      72149,
+      72163,
+      72189,
+      72439,
+      72531,
+      72690,
+      72707,
+      72731,
+      72758,
+      72782,
+      72987,
+      73027,
+      73210,
+      73232,
+      73256,
+      73288,
+      73353,
+      73560,
+      73752,
+      74061,
+      74082,
+      74109,
+      74175,
+      74190,
+      74215,
+      74240,
+      74278,
+      74306,
+      74339,
+      74371,
+      74385,
+      74419,
+      74636,
+      74726,
+      74762,
+      75103,
+      75127,
+      75159,
+      75175,
+      75203,
+      75233,
+      75275,
+      75315,
+      75343,
+      75602,
+      75665,
+      75907,
+      75926,
+      75955,
+      75974,
+      76001,
+      76169,
+      76279,
+      76321,
+      76489,
+      76511,
+      76535,
+      76805,
+      77000,
+      77023,
+      77048,
+      77073,
+      77602,
+      77621,
+      77631,
+      77646,
+      77673,
+      77703,
+      77731,
+      77770,
+      77809,
+      77826,
+      77855,
+      77890,
+      77929,
+      77950,
+      77964,
+      77996,
+      78021,
+      78061,
+      78110,
+      78136,
+      79822,
+      79841,
+      79879,
+      79909,
+      79931,
+      79952,
+      79973,
+      79999,
+      80054,
+      80074,
+      80102,
+      80128
+    ],
+    "options_zh": [
+      "A. 1",
+      "B. 5",
+      "C. 3",
+      "D. 7"
+    ],
+    "options_en": [
+      "A. 1",
+      "B. 5",
+      "C. 3",
+      "D. 7"
+    ],
+    "question": {
+      "question_zh": "一个回合指的是从发球开始到球落地结束。统计该羽毛球视频片段中回合数。",
+      "question_en": "Count the number of rallies in this video clip (each starting with a serve and ending when the ball lands)."
+    },
+    "question_id": "ROUND COUNT_0007.mp4_35202_38922_30"
+  },
+  {
+    "video_id": "0050.mp4",
+    "duration": "long",
+    "start_frame": 12212,
+    "end_frame": 18805,
+    "spatial": "count",
+    "temporal": "round count",
+    "answer": "A",
+    "start_score": "1:0",
+    "end_score": "5:4",
+    "hitting_frames": [
+      80434,
+      80499,
+      80530,
+      80566,
+      80588,
+      80619,
+      80665,
+      80694,
+      80722,
+      80753,
+      80785,
+      80813,
+      80840,
+      80906,
+      80920,
+      80949,
+      80978,
+      81036,
+      81067,
+      81101,
+      81132,
+      81455,
+      81507,
+      81553,
+      81710,
+      81759,
+      82191,
+      82216,
+      82244,
+      82261,
+      82278,
+      82298,
+      82320,
+      83046,
+      83066,
+      83099,
+      83131,
+      83157,
+      83192,
+      83205,
+      83237,
+      83288,
+      83325,
+      83880,
+      84155,
+      84177,
+      84205,
+      84239,
+      84266,
+      84296,
+      84337,
+      84368,
+      84385,
+      84414,
+      84441,
+      84871,
+      84924,
+      85028,
+      85065,
+      85508,
+      85575,
+      85590,
+      85620,
+      85649,
+      85679,
+      85705,
+      85728,
+      85767,
+      86477,
+      86500,
+      86530,
+      86563,
+      86590,
+      86639,
+      86671,
+      86694,
+      86722,
+      86742
+    ],
+    "options_zh": [
+      "A. 8",
+      "B. 6",
+      "C. 10",
+      "D. 11"
+    ],
+    "options_en": [
+      "A. 8",
+      "B. 10",
+      "C. 6",
+      "D. 11"
+    ],
+    "question": {
+      "question_zh": "这是羽毛球赛事的一段视频，请统计该视频片段中共有几个回合？",
+      "question_en": "In this badminton footage, how many rallies are there from the serve until the ball lands?"
+    },
+    "question_id": "ROUND COUNT_0050.mp4_12212_18805_68"
+  },
+  {
+    "video_id": "0003.mp4",
+    "duration": "long",
+    "start_frame": 78500,
+    "end_frame": 78984,
+    "spatial": "count",
+    "temporal": "round count",
+    "answer": "A",
+    "start_score": "13:16",
+    "end_score": "14:16",
+    "hitting_frames": [
+      30969,
+      30990,
+      31012,
+      31034,
+      31068,
+      31079,
+      31736,
+      31760,
+      31796,
+      31807,
+      32415,
+      32435,
+      32484,
+      32495,
+      32524,
+      32547,
+      32599,
+      32620,
+      32643,
+      32668,
+      32692,
+      32725,
+      32768,
+      33012,
+      33054,
+      33136,
+      33476,
+      33493,
+      33503,
+      33520,
+      33539,
+      33574,
+      33587,
+      33608,
+      33658,
+      33916,
+      34226,
+      34247,
+      34269,
+      34318,
+      34328,
+      34356,
+      34381,
+      35430,
+      35450,
+      35461,
+      35475,
+      35485,
+      35500,
+      35511,
+      36008,
+      36028,
+      36048,
+      36074,
+      36110,
+      36134,
+      36156,
+      36202,
+      36423,
+      36524,
+      36912,
+      36929,
+      36948,
+      36980,
+      36992,
+      37023,
+      37043,
+      37067,
+      37810,
+      37828,
+      38325,
+      38348,
+      38369,
+      38394,
+      38452,
+      38467,
+      38488,
+      38511,
+      38533,
+      38559,
+      38603,
+      38617,
+      38645,
+      38671,
+      38696,
+      38761,
+      39136,
+      39324,
+      39343,
+      39363,
+      39382,
+      39403,
+      39423,
+      39452,
+      39466,
+      39491,
+      39516,
+      39539,
+      39580,
+      39602,
+      39631,
+      39657,
+      39715,
+      39736,
+      39764,
+      39790,
+      41252,
+      41272,
+      41312,
+      41356,
+      41391,
+      41919,
+      41941,
+      41961,
+      41983,
+      41996,
+      42194,
+      42224,
+      42239,
+      42341,
+      42443,
+      42515,
+      42537,
+      42556,
+      42580,
+      42613,
+      42649,
+      43095,
+      43108,
+      43119,
+      43136,
+      43470,
+      43489,
+      43512,
+      43869,
+      43934,
+      44055,
+      44076,
+      44096,
+      44120,
+      44661,
+      44679,
+      44702,
+      44739,
+      44751,
+      44778,
+      44803,
+      44828,
+      44884,
+      44902,
+      45059,
+      45327,
+      45340,
+      45356,
+      45729,
+      45743,
+      45754
+    ],
+    "options_zh": [
+      "A. 1",
+      "B. 4",
+      "C. 5",
+      "D. 3"
+    ],
+    "options_en": [
+      "A. 1",
+      "B. 3",
+      "C. 5",
+      "D. 4"
+    ],
+    "question": {
+      "question_zh": "这段视频中，从发球到球落地结束的回合共有多少个？",
+      "question_en": "How many rallies (starting with the serve and ending when the ball lands) are in this video?"
+    },
+    "question_id": "ROUND COUNT_0003.mp4_78500_78984_17"
+  },
+  {
+    "video_id": "0009.mp4",
+    "duration": "mid",
+    "start_frame": 48643,
+    "end_frame": 48870,
+    "spatial": "cognition",
+    "temporal": "round comment",
+    "options_zh": [
+      "A. top凭借主动的节奏变化与强攻能力掌控全场，反观bottom在防守转攻时缺乏力度且失误较多，建议加强被动情况下的控网稳定性以提升反击效率。",
+      "B. bottom通过频繁运用假动作和大角度分球制造威胁，而top在应对过顶球时出现明显被动，建议提升防守时的预判和步法移动准确性以破解对手战术。",
+      "C. top在网前控球和假动作衔接环节暴露明显漏洞，反观bottom利用高质量过顶球与精准抢网占据主动权，建议重点强化中后场的衔接配合。",
+      "D. bottom通过精准的防守反击和灵活的网前控制有效限制了top的进攻，而top在关键分中主动变线失误较多且防守漏洞明显，建议top在保持攻击性的同时提升相持阶段的稳定性以减少非强迫性失误，同时bottom应强化主动进攻意识以增加得分手段。"
+    ],
+    "options_en": [
+      "A. Top controlled the game with proactive tempo variations and strong attacking ability, while Bottom lacked power in defense-to-offense transitions and made frequent errors. It is recommended to enhance net control stability in passive situations to improve counterattack efficiency.",
+      "B. Bottom created threats by frequently using deceptive shots and wide-angle placements, whereas Top appeared noticeably passive when handling overhead shots. It is suggested to improve defensive anticipation and footwork accuracy to counter the opponent's tactics.",
+      "C. Top exposed obvious weaknesses in net control and deceptive shot transitions, while Bottom seized the initiative with high-quality overhead clears and precise net interceptions. It is advised to focus on strengthening mid-to-rear court coordination.",
+      "D. Bottom effectively restricted Top's attacks through precise counterattacks from defense and flexible net control. While Top made more active line - changing errors and had obvious defensive loopholes in key points. It is recommended that Top improve the stability in the rally stage to reduce unforced errors while maintaining aggression. At the same time, Bottom should strengthen the awareness of active attack to increase scoring methods."
+    ],
+    "answer": "A",
+    "question": {
+      "question_zh": "对于这一回合，以下哪个评价最能全面反映运动员的表现？",
+      "question_en": "For this rally, which of the following evaluations best comprehensively reflects the players' performance?"
+    },
+    "hitting_frames": [
+      48674,
+      48695,
+      48726,
+      48745,
+      48768,
+      48811,
+      48829
+    ],
+    "question_id": "ROUND COMMENT_0009.mp4_48643_48870_59"
+  },
+  {
+    "video_id": "0001.mp4",
+    "duration": "mid",
+    "start_frame": 12062,
+    "end_frame": 12319,
+    "spatial": "cognition",
+    "temporal": "round comment",
+    "options_zh": [
+      "A. bottom展现快速反应和多拍相持中的战术执行力，反手挡网化解险情后及时转换攻势；top在优势相持阶段失误过多，关键分主动进攻选择保守且质量不足，需提升关键分处理能力。",
+      "B. top展现了快速反应和战术执行力，以精准的过顶劈杀和分球压制对手；bottom在被动时防守失误频发，特别在关键分中网前处理犹豫不决，需加强关键分的果断性。",
+      "C. bottom在多拍相持中多次尝试假动作扣杀但未能有效欺骗对手，导致线路被预判；而top通过高质量的抢网和反手挑后场控制节奏，展现了战术多变性，关键分选择果断。",
+      "D. top展现了快速反应和多拍相持中的战术执行力，反手挡网球路精准化解险情后迅速转为攻势压制；bottom在关键分阶段频繁失误，主动进攻选择过于激进但质量低下，需增强相持阶段的稳定性与关键分处理的精准度。"
+    ],
+    "options_en": [
+      "A. bottom demonstrated quick reflexes and tactical execution in multi-shot rallies, using backhand blocks to defuse threats before swiftly transitioning to offense; top committed excessive errors during advantageous rallies, with conservative and low-quality attacking choices on key points, requiring improvement in critical point handling.",
+      "B. top showcased quick reflexes and tactical execution, employing precise overhead smashes and placement to pressure the opponent; bottom frequently made defensive errors when under pressure, particularly hesitating in net play during key points, needing to enhance decisiveness in critical moments.",
+      "C. bottom repeatedly attempted deceptive smashes in multi-shot rallies but failed to effectively mislead the opponent, resulting in predictable shots; top controlled the tempo with high-quality net interceptions and backhand lifts to the rear court, demonstrating tactical versatility and decisive choices on key points.",
+      "D. Top demonstrated quick reactions and tactical execution in multi-shot rallies. After precisely resolving dangerous situations with a backhand block, he/she quickly shifted to an offensive stance to suppress the opponent. Bottom made frequent mistakes during the crucial point phase. The choices of active attacks were too aggressive but of low quality. There is a need to enhance the stability during the rally phase and the precision in handling crucial points."
+    ],
+    "answer": "A",
+    "question": {
+      "question_zh": "以下哪一选项最能准确评价该回合的整体表现？",
+      "question_en": "Which of the following options best accurately evaluates the overall performance of this rally?"
+    },
+    "hitting_frames": [
+      12072,
+      12093,
+      12117,
+      12143,
+      12179,
+      12214,
+      12228,
+      12254,
+      12269,
+      12279,
+      12299
+    ],
+    "question_id": "ROUND COMMENT_0001.mp4_12062_12319_162"
+  },
+  {
+    "video_id": "0007.mp4",
+    "duration": "long",
+    "start_frame": 108096,
+    "end_frame": 108451,
+    "spatial": "cognition",
+    "temporal": "round comment",
+    "options_zh": [
+      "A. 这是一回合围绕网前技术展开的攻防拉锯战，bottom通过细腻的搓放控制不断压缩top的反应空间，最终凭借第10拍的教科书级网前球奠定胜局。top在被动中急于通过节奏变化扭转劣势，但关键分稳定性不足暴露短板，建议强化网前被动情况下的放球成功率。",
+      "B. 本回合呈现典型的防守反击格局，bottom在遭遇top连续高压下主动采用劈吊后场战术制造反击契机，通过第8拍反手区精准的过顶劈对角打破平衡。尽管top凭借防守连续性化解了6次危机，但决胜分因救球后的小幅度假动作欺骗不足，被对手预判路线抓死，建议提升高远球稳定性。",
+      "C. 此回合充分体现底线对抗的战术执行力，bottom依托快速启动与精准的后场扣杀压制对方反手位，顶防头顶区直线杀上网成为决胜关键。top在追防中多次通过大范围移动补位化解危机，但决胜分处理时因重心偏移导致球拍过顶击球下网失误，显示出强化核心力量训练的必要性。",
+      "D. 此回合聚焦多拍相持中的技术博弈，bottom在前6拍选择保守过渡策略，突然在第7拍通过突然加速抢网制造对手回球下网的被动局面。top在被动中尝试变线分球试图破解，但连续三次过网高度不足遭遇压制，最终因网前预判失误导致放网球出边线，暴露其在被动分差下线路选择的不足。"
+    ],
+    "options_en": [
+      "A. This rally was a tug-of-war centered around net play techniques. Bottom continuously compressed Top's reaction space with delicate net shots and placements, ultimately securing victory with a textbook-level net shot on the 10th stroke. Top attempted to reverse the disadvantage through tempo changes in passive situations but exposed weaknesses in stability during crucial points. It is recommended to improve the success rate of net shots under passive conditions.",
+      "B. This round fully demonstrated tactical execution in baseline confrontations. Bottom relied on quick starts and precise backcourt smashes to pressure Top's backhand, with the decisive moment being a straight smash from the overhead area followed by a net rush. Top managed to cover wide ranges to defend multiple crises but lost the final point due to a mishit caused by off-balance overhead swing, highlighting the need to strengthen core strength training.",
+      "C. This round showcased a classic defensive counterattack pattern. Bottom proactively employed deep drop shots to create counter opportunities under Top's continuous high-pressure attacks, breaking the balance with an accurate overhead cross-court slice on the 8th stroke. Although Top resolved six crises with defensive consistency, the final point was lost due to insufficient deception after a retrieval, allowing the opponent to predict and intercept the shot. Improving high clear stability is recommended.",
+      "D. This round focused on technical duels in extended rallies. Bottom adopted a conservative transition strategy in the first six strokes, then suddenly accelerated to rush the net on the 7th stroke, forcing Top into a passive net error. Top attempted to disrupt with cross-court placements but suffered three consecutive low clears, ultimately losing due to a misjudged net shot that went wide, exposing weaknesses in shot selection under passive score differences."
+    ],
+    "answer": "A",
+    "question": {
+      "question_zh": "对于这一回合，哪一个评价最为恰当？",
+      "question_en": "Which evaluation is most appropriate for this rally?"
+    },
+    "hitting_frames": [
+      108098,
+      108119,
+      108143,
+      108170,
+      108229,
+      108260,
+      108278,
+      108305,
+      108330,
+      108358,
+      108389
+    ],
+    "question_id": "ROUND COMMENT_0007.mp4_108096_108451_175"
+  },
+  {
+    "video_id": "0042.mp4",
+    "duration": "mid",
+    "start_frame": 93232,
+    "end_frame": 93436,
+    "spatial": "count",
+    "temporal": "detailed hitting count",
+    "question": {
+      "question_zh": "在所提供的视频片段中，总共出现了几次“推球”：推球是一种通过拍面与球形成一定角度、给球向前向上的力的击球方式。？",
+      "question_en": "In the provided video segment, how many times was the 'Push shot' performed? A push shot is played from the forecourt or midcourt, directing the shuttle with a pushing motion, often flat or slightly upwards."
+    },
+    "answer": "A",
+    "hit_type": "推球",
+    "count": 2,
+    "hitting_frames": [
+      93240,
+      93266,
+      93304,
+      93321,
+      93350,
+      93367,
+      93386,
+      93409,
+      93240,
+      93266,
+      93304,
+      93321,
+      93350,
+      93367,
+      93386,
+      93409
+    ],
+    "question_id": "DETAILED HITTING COUNT_0042.mp4_93232_93436_122",
+    "options_zh": [
+      "A. 2",
+      "B. 3",
+      "C. 7",
+      "D. 8"
+    ],
+    "options_en": [
+      "A. 2",
+      "B. 3",
+      "C. 7",
+      "D. 8"
+    ]
+  },
+  {
+    "video_id": "0002.mp4",
+    "duration": "long",
+    "start_frame": 67657,
+    "end_frame": 68268,
+    "spatial": "count",
+    "temporal": "detailed hitting count",
+    "question": {
+      "question_zh": "在所提供的视频片段中，总共出现了几次“勾球”：勾球是一种通过手腕快速弯曲击球、使球穿越至对方场地对侧网前的击球方式。？",
+      "question_en": "In the provided video segment, how many times was the 'Cross-court net shot' performed? A cross-court net shot involves hitting the shuttle diagonally across the net from one side of the forecourt to the other, using wrist action."
+    },
+    "answer": "B",
+    "hit_type": "勾球",
+    "count": 3,
+    "hitting_frames": [
+      67693,
+      67714,
+      67746,
+      67757,
+      67788,
+      67816,
+      67858,
+      67897,
+      67917,
+      67943,
+      67952,
+      67978,
+      68008,
+      68020,
+      68051,
+      68081,
+      68112,
+      68145,
+      68155,
+      68176,
+      68198,
+      68233
+    ],
+    "question_id": "DETAILED HITTING COUNT_0002.mp4_67657_68268_89",
+    "options_zh": [
+      "A. 5",
+      "B. 3",
+      "C. 1",
+      "D. 2"
+    ],
+    "options_en": [
+      "A. 5",
+      "B. 3",
+      "C. 1",
+      "D. 2"
+    ]
+  },
+  {
+    "video_id": "0004.mp4",
+    "duration": "mid",
+    "start_frame": 24907,
+    "end_frame": 25180,
+    "spatial": "count",
+    "temporal": "detailed hitting count",
+    "question": {
+      "question_zh": "在所提供的视频片段中，总共出现了几次“杀球”：杀球是一种将球在尽量高的击球点上大力斜压下去的击球方式。？",
+      "question_en": "In the provided video segment, how many times was the 'Smash' performed? A smash is a powerful overhead shot hit steeply downwards into the opponent's court."
+    },
+    "answer": "C",
+    "hit_type": "杀球",
+    "count": 2,
+    "hitting_frames": [
+      24931,
+      24953,
+      24975,
+      24998,
+      25013,
+      25036,
+      25063,
+      25087,
+      25107,
+      25129
+    ],
+    "question_id": "DETAILED HITTING COUNT_0004.mp4_24907_25180_37",
+    "options_zh": [
+      "A. 1",
+      "B. 6",
+      "C. 2",
+      "D. 0"
+    ],
+    "options_en": [
+      "A. 1",
+      "B. 6",
+      "C. 2",
+      "D. 0"
+    ]
+  }
+]

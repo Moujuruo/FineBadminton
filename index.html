@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FineBadminton Dataset Showcase</title>
+    <script src="https://cdn.tailwindcss.com/3.4.3"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/framer-motion/11.2.10/motion.umd.min.js" integrity="sha512-hJszj38uG8hLNoi7joYpBIm5IEJ1g7GjWJt/t5_40P9g5eRce87Sw2UYr/DDUMd5GFdJ7tLdPoB6gT8zW7cjgA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-100 text-gray-800 font-sans">
+    <div id="app" class="container mx-auto p-4">
+        <header class="text-center py-8">
+            <h1 class="text-4xl font-bold text-blue-600">FineBadminton: A Multi-Level Fine-Grained Dataset for Badminton Video Understanding</h1>
+        </header>
+
+        <!-- Tab Navigation -->
+        <div class="flex justify-center mb-6">
+            <button id="dataset-tab" class="px-6 py-2 text-lg font-semibold text-white bg-blue-500 rounded-l-md hover:bg-blue-600 focus:outline-none">Dataset</button>
+            <button id="benchmark-tab" class="px-6 py-2 text-lg font-semibold text-blue-500 bg-gray-200 rounded-r-md hover:bg-gray-300 focus:outline-none">Benchmark</button>
+        </div>
+
+        <!-- Dataset Content -->
+        <div id="dataset-content">
+            <div class="my-4 p-4 bg-white shadow-md rounded-lg">
+                <label for="round-select" class="mr-2 font-semibold">Select Round:</label>
+                <div id="round-select-buttons-container" class="mt-2">
+                    <!-- Round buttons will be populated by JavaScript -->
+                </div>
+            </div>
+
+            <main class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <!-- Video and Frame Display Area -->
+                <div id="video-area" class="md:col-span-2 bg-white p-6 shadow-md rounded-lg">
+                    <h2 class="text-2xl font-semibold mb-4 text-blue-500">Round Video</h2>
+                    <div id="video-player-container" class="relative bg-black aspect-video rounded overflow-hidden">
+                        <img id="current-frame-img" src="" alt="Current Frame" class="w-full h-full object-contain">
+                        <div id="video-controls" class="absolute bottom-0 left-0 right-0 p-2 bg-black bg-opacity-50 flex items-center justify-center">
+                            <button id="play-pause-btn" class="text-white px-3 py-1 bg-blue-500 hover:bg-blue-600 rounded">Play</button>
+                            <span id="current-time" class="text-white mx-2">0.00s</span> / <span id="total-duration" class="text-white mx-2">0.00s</span>
+                             <span id="current-frame-display" class="text-white mx-2">Frame: 0</span>
+                        </div>
+                    </div>
+                    <div id="timeline-bar-container" class="mt-4 h-10 bg-gray-200 rounded relative">
+                        <!-- Timeline segments will be populated here -->
+                    </div>
+                     <div class="mt-2 text-sm text-gray-600">
+                        <p>Video: <span id="video-filename" class="font-mono">-</span></p>
+                        <p>Resolution: <span id="video-resolution" class="font-mono">-</span> | FPS: <span id="video-fps" class="font-mono">-</span> | Duration: <span id="video-duration-frames" class="font-mono">-</span> frames</p>
+                    </div>
+                </div>
+
+                <!-- Hitting Information Panel -->
+                <div id="hitting-info-panel" class="bg-white p-6 shadow-md rounded-lg relative">
+                    <div id="language-toggle-container" class="absolute top-4 right-4 flex space-x-1">
+                        <button id="lang-zh-btn" data-lang="zh" class="lang-btn px-3 py-1 text-sm rounded-l-md">汉</button>
+                        <button id="lang-en-btn" data-lang="en" class="lang-btn px-3 py-1 text-sm rounded-r-md">En</button>
+                    </div>
+                    <h2 class="text-2xl font-semibold mb-4 text-green-500">Hitting Information</h2>
+                    <div id="hitting-details">
+                        <p class="text-gray-500">Select a hitting segment on the timeline or play the video.</p>
+                        <!-- Hitting details will be populated here -->
+                    </div>
+                </div>
+            </main>
+
+            <!-- Round Evaluation Panel -->
+            <footer id="round-evaluation-panel" class="mt-8 p-6 bg-white shadow-md rounded-lg">
+                <h2 class="text-2xl font-semibold mb-4 text-purple-500">Round Evaluation</h2>
+                <div id="evaluation-details">
+                    <p class="text-gray-500">Evaluation details will appear here once a round is selected.</p>
+                    <!-- Evaluation details will be populated here -->
+                </div>
+            </footer>
+        </div> <!-- End of dataset-content -->
+
+        <!-- Benchmark Content -->
+        <div id="benchmark-content" class="hidden">
+            
+            <div id="benchmark-section" class="container mx-auto p-4">
+                <header class="text-center py-8">
+                    <h1 class="text-3xl font-bold text-indigo-600">Benchmark Challenges</h1>
+                </header>
+
+                <!-- Benchmark Dataset Structure Table -->
+                <div id="benchmark-table-container" class="my-8 p-6 bg-white shadow-lg rounded-lg overflow-x-auto">
+                    <h2 class="text-2xl font-semibold mb-4 text-indigo-700 text-center">Benchmark Dataset Structure</h2>
+                    <!-- Table will be populated by JavaScript -->
+                </div>
+                
+                <hr class="my-8 border-gray-200">
+
+                <div class="my-4 p-4 bg-white shadow-md rounded-lg flex justify-between items-center">
+                    <h2 class="text-xl font-semibold text-indigo-500">Explore Benchmark Tasks by Category</h2>
+                    <div id="benchmark-language-toggle-container" class="flex space-x-1">
+                        <button id="benchmark-lang-zh-btn" data-lang="zh" class="lang-btn px-3 py-1 text-sm rounded-l-md">汉</button>
+                        <button id="benchmark-lang-en-btn" data-lang="en" class="lang-btn px-3 py-1 text-sm rounded-r-md">En</button>
+                    </div>
+                </div>
+
+                <!-- D3.js Visualization Container for Benchmark Categories -->
+                <div id="benchmark-d3-container" class="my-8 flex justify-center items-center min-h-[400px] md:min-h-[500px] bg-gray-50 rounded-lg shadow-inner relative">
+                    <!-- D3 visualization will be appended here -->
+                    <button id="benchmark-d3-back-btn" class="absolute top-4 left-4 px-3 py-1 bg-gray-400 text-white rounded hover:bg-gray-500 transition-colors text-sm hidden">&larr; Back</button>
+                </div>
+
+                <!-- Question Display Area (Revealed on Temporal Click) -->
+                <div id="benchmark-question-display-area" class="my-8 p-6 bg-white shadow-xl rounded-lg hidden">
+                    <button id="benchmark-back-to-temporal-btn" class="mb-4 px-3 py-1 bg-gray-400 text-white rounded hover:bg-gray-500 transition-colors text-sm">&larr; Back to Sub-Categories</button>
+                    <h3 id="benchmark-question-category-title" class="text-xl font-semibold mb-4 text-indigo-700"></h3>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div id="benchmark-video-container" class="bg-black rounded overflow-hidden aspect-video">
+                            <video id="benchmark-video" class="w-full h-full" controls playsinline>
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <div id="benchmark-question-content">
+                            <p id="benchmark-question-text" class="text-lg mb-4 font-medium"></p>
+                            <div id="benchmark-options-container" class="space-y-3 mb-4">
+                                <!-- Options will be populated here -->
+                            </div>
+                            <div id="benchmark-answer-reveal-container" class="mt-4 hidden">
+                                <p class="text-md font-semibold">Correct Answer: <span id="benchmark-correct-answer" class="text-green-600"></span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="benchmark-question-navigation" class="mt-6 flex justify-between items-center">
+                        <button id="benchmark-prev-question-btn" class="px-4 py-2 bg-gray-300 text-gray-700 rounded hover:bg-gray-400 transition-colors disabled:opacity-50">Previous</button>
+                        <span id="benchmark-question-progress-text" class="text-sm text-gray-600"></span>
+                        <button id="benchmark-next-question-btn" class="px-4 py-2 bg-gray-300 text-gray-700 rounded hover:bg-gray-400 transition-colors disabled:opacity-50">Next</button>
+                    </div>
+                </div>
+
+            </div> <!-- End of inner container for benchmark -->
+        </div> <!-- End of benchmark-content -->
+
+    </div> <!-- End of app -->
+
+    <script src="script.js"></script>
+    <script>
+        const datasetTab = document.getElementById('dataset-tab');
+        const benchmarkTab = document.getElementById('benchmark-tab');
+        const datasetContent = document.getElementById('dataset-content');
+        const benchmarkContent = document.getElementById('benchmark-content');
+
+        function showDataset() {
+            datasetContent.classList.remove('hidden');
+            benchmarkContent.classList.add('hidden');
+            datasetTab.classList.add('bg-blue-500', 'text-white');
+            datasetTab.classList.remove('bg-gray-200', 'text-blue-500');
+            benchmarkTab.classList.add('bg-gray-200', 'text-blue-500');
+            benchmarkTab.classList.remove('bg-blue-500', 'text-white');
+        }
+
+        function showBenchmark() {
+            benchmarkContent.classList.remove('hidden');
+            datasetContent.classList.add('hidden');
+            benchmarkTab.classList.add('bg-blue-500', 'text-white');
+            benchmarkTab.classList.remove('bg-gray-200', 'text-blue-500');
+            datasetTab.classList.add('bg-gray-200', 'text-blue-500');
+            datasetTab.classList.remove('bg-blue-500', 'text-white');
+
+            // Call the new function to render D3 if needed
+            if (typeof window.renderBenchmarkD3IfNeeded === 'function') {
+                window.renderBenchmarkD3IfNeeded();
+            } else {
+                console.error('renderBenchmarkD3IfNeeded function not found. D3 visualization may not load.');
+            }
+        }
+
+        datasetTab.addEventListener('click', showDataset);
+        benchmarkTab.addEventListener('click', showBenchmark);
+
+        // Show dataset by default
+        showDataset();
+    </script>
+</body>
+</html> 
