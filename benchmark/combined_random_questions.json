@@ -311,7 +311,7 @@
     "spatial": "count",
     "temporal": "hitting count",
     "question": {
-      "question_zh": "计算这个回合中两名选手击球的总次数。",
+      "question_zh": "计算这个回合中画面下方选手击球的总次数。",
       "question_en": "Calculate the total number of strokes hit by the bottom player in this rally."
     },
     "options_zh": [

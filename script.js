@@ -463,7 +463,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Layer 2: Semantics
         content += `<div class="mb-3 layer-container semantics-layer">`;
-        content += `<p class="layer-title text-teal-600">Semantics Layer</p>`;
+        content += `<p class="layer-title text-teal-600">Tactical Semantics Layer</p>`;
         content += `<div class="layer-content">`;
         content += `<p class="info-item"><span class="info-label">Player Actions:</span> ${hit.player_actions ? hit.player_actions.join(', ') : 'N/A'}</p>`;
         content += `<p class="info-item"><span class="info-label">Shot Characteristics:</span> ${hit.shot_characteristics ? hit.shot_characteristics.join(', ') : 'N/A'}</p>`;
