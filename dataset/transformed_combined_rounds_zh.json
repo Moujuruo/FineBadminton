@@ -316,6 +316,9 @@
                 ],
                 "shot_characteristics": [
                     "斜线"
+                ],
+                "hit_outcomes": [
+                    "出界"
                 ]
             }
         ],

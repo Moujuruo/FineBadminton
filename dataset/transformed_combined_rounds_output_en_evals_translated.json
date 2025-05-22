@@ -111,7 +111,7 @@
                     "flat lift"
                 ],
                 "quality": "3",
-                "comment": "Top moves from the left backcourt to his own left frontcourt by moving to the net, using a forehand t-push to lift a straight high ball to the opponent's right backcourt area. Aiming to create depth with the lob to gain time for returning and adjusting, but the arc is poor.",
+                "comment": "Top moves from the left backcourt to his own left frontcourt by moving to the net, using a forehand push to lift a straight high ball to the opponent's right backcourt area. Aiming to create depth with the lob to gain time for returning and adjusting, but the arc is poor.",
                 "hit_frame": 16451,
                 "get_point": [],
                 "ball_area": "left front court",
@@ -316,6 +316,9 @@
                 ],
                 "shot_characteristics": [
                     "cross-court"
+                ],
+                "hit_outcomes": [
+                    "out"
                 ]
             }
         ],

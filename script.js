@@ -688,11 +688,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 ["Count", "Round Count", "Long", "83"],
                 ["Count", "Detailed Hitting Count", "Short-Long", "130"],
                 ["Action", "Action Prediction", "Short", "250"],
-                ["Action", "Action Localization", "Short-Long", "200"],
+                ["Action", "Action Grounding", "Short-Long", "200"],
                 ["Action", "Action Classification", "Short", "200"],
                 ["Position", "Moving Recognition", "Medium", "200"],
                 ["Position", "Hitting Localization", "Short", "200"],
-                ["Position", "Hitting Prediction", "Short", "200"],
+                ["Position", "Landing Prediction", "Short", "200"],
                 ["Cognition", "Hitting Comment", "Short", "250+50"],
                 ["Cognition", "Round Comment", "Long", "250+50"],
                 ["Cognition", "Pointer Recognition", "Long", "250+50"]
@@ -712,11 +712,11 @@ document.addEventListener('DOMContentLoaded', () => {
             "round count": { en: "Round Count", zh: "回合计数" },
             "detailed hitting count": { en: "Detailed Hitting Count", zh: "详细击球计数" },
             "action prediction": { en: "Action Prediction", zh: "动作预测" },
-            "action localization": { en: "Action Localization", zh: "动作定位" },
+            "action localization": { en: "Action Grounding", zh: "动作定位" },
             "action classification": { en: "Action Classification", zh: "动作分类" },
             "moving recognition": { en: "Moving Recognition", zh: "移动识别" }, // Corrected typo from recognization
             "hitting localization": { en: "Hitting Localization", zh: "击球位置定位" },
-            "hitting prediction": { en: "Hitting Prediction", zh: "落点预测" },
+            "hitting prediction": { en: "Landing Prediction", zh: "落点预测" },
             "hitting comment": { en: "Hitting Comment", zh: "击球评价" },
             "round comment": { en: "Round Comment", zh: "回合评价" },
             "pointer recognition": { en: "Pointer Recognition", zh: "得分者判断" } // Corrected typo
@@ -749,7 +749,7 @@ document.addEventListener('DOMContentLoaded', () => {
             let tableHTML = '<table class="min-w-full divide-y divide-gray-200">';
             tableHTML += '<thead class="bg-gray-50"><tr>';
             BENCHMARK_TABLE_DATA.headers.forEach(header => {
-                tableHTML += `<th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">${header}</th>`;
+                tableHTML += `<th scope="col" class="px-6 py-3 text-center text-xs font-medium text-gray-500 uppercase tracking-wider">${header}</th>`;
             });
             tableHTML += '</tr></thead><tbody class="bg-white divide-y divide-gray-200">';
             let currentSpatialDim = "";
@@ -764,10 +764,10 @@ document.addEventListener('DOMContentLoaded', () => {
                                 if (BENCHMARK_TABLE_DATA.rows[i][0] === currentSpatialDim) rowSpan++;
                                 else break;
                             }
-                            tableHTML += `<td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900 align-top" rowspan="${rowSpan}">${cell}</td>`;
+                            tableHTML += `<td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900 align-top text-center" rowspan="${rowSpan}">${cell}</td>`;
                         } 
                     } else {
-                        tableHTML += `<td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">${cell}</td>`;
+                        tableHTML += `<td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500 text-center">${cell}</td>`;
                     }
                 });
                 tableHTML += '</tr>';

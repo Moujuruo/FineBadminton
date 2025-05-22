@@ -165,12 +165,12 @@ body {
 
 /* Benchmark Section Styles */
 #benchmark-table-container table {
-    @apply w-full min-w-max table-auto text-left border-collapse;
+    @apply w-full min-w-max table-auto text-center border-collapse;
 }
 
 #benchmark-table-container th,
 #benchmark-table-container td {
-    @apply p-3 border border-gray-300 text-sm;
+    @apply p-3 border border-gray-300 text-sm text-center;
 }
 
 #benchmark-table-container th {
